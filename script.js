@@ -6,8 +6,6 @@ let getDynamic = document.getElementById('dynamic');
 calcBtn.addEventListener("click", () => {
     var player1 = parseInt(getPlayer1.value);
     var player2 = parseInt(getPlayer2.value);
-    
-  
 
     if (player1 > 54) {
         noInput("54 is max")
@@ -23,8 +21,6 @@ calcBtn.addEventListener("click", () => {
     if (totalHcp > 0) {
         getDynamic.innerHTML = `Team will get ${totalHcp} in HCP - adjusted ${Math.round(totalHcp)}`
     }
-
-
 });
 
 
@@ -53,7 +49,6 @@ function calculateHcp(p1, p2) {
     }
 
     return totalHcp;
-
 }
 
 
